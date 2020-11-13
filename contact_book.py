@@ -71,7 +71,7 @@ class General:
         # global contact_list
         self.list_of_contacts = ListOfContacts()
 
-        first = Contact('Ruben', 'Zurabyan', '79031805211')
+        first = Contact('Rub', 'Zur', '1671671716')
         second = Contact('Mda', 'Uj', '73676116612')
         self.list_of_contacts.add_contact(*first.return_info())
         self.list_of_contacts.add_contact(*second.return_info())
