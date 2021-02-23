@@ -65,7 +65,7 @@ class Contact:
         return self.name, self.lastname, self.phone
 
 
-class General:
+class Manager:
     """ Main process of contact book """
     def __init__(self):
         # global contact_list
@@ -105,7 +105,7 @@ class General:
             self.user_input()
 
 if __name__ == '__main__':
-    letsgo = General()
+    letsgo = Manager()
 
     # contact_list.add_contact()
     # contact_list.print_list()

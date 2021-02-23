@@ -12,6 +12,9 @@ def game_process(hidden_word, available_guesses):
         guessed_letter = input('\nGuess a letter: ').lower()
         if guessed_letter.isalpha() and len(guessed_letter) == 1 and guessed_letter not in guessed_letters_list:
             guessed_letters_list.append(guessed_letter)
+        elif guessed_letter in guessed_letters_list:
+            print(f'You have already guessed this letter, try any other')
+            continue
         else:
             print('Wrong input, try again')
             continue
